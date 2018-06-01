@@ -117,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				B53DEDA520BFF6970077E457 /* SY185SDK.h */,
-				B53DEE0220C14BAD0077E457 /* Model */,
 				B53DEDE020BFFA990077E457 /* Interface */,
+				B53DEE0220C14BAD0077E457 /* Model */,
 				B53DEDA620BFF6970077E457 /* Info.plist */,
 			);
 			path = SY185SDK;
