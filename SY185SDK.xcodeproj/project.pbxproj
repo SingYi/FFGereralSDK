@@ -28,6 +28,7 @@
 		B53DEE1920C14CD00077E457 /* SY185GeneralModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B53DEE1720C14CD00077E457 /* SY185GeneralModel.h */; };
 		B53DEE1A20C14CD00077E457 /* SY185GeneralModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEE1820C14CD00077E457 /* SY185GeneralModel.m */; };
 		B53DEE1D20C14D600077E457 /* SY185PCH.pch in Headers */ = {isa = PBXBuildFile; fileRef = B53DEE1C20C14D570077E457 /* SY185PCH.pch */; };
+		B53DEE1F20C156A70077E457 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B53DEE1E20C156A70077E457 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		B53DEE1720C14CD00077E457 /* SY185GeneralModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SY185GeneralModel.h; sourceTree = "<group>"; };
 		B53DEE1820C14CD00077E457 /* SY185GeneralModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SY185GeneralModel.m; sourceTree = "<group>"; };
 		B53DEE1C20C14D570077E457 /* SY185PCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SY185PCH.pch; sourceTree = "<group>"; };
+		B53DEE1E20C156A70077E457 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		B53DED9820BFF6970077E457 = {
 			isa = PBXGroup;
 			children = (
+				B53DEE1E20C156A70077E457 /* README.md */,
 				B53DEDA420BFF6970077E457 /* SY185SDK */,
 				B53DEDB220BFF6B90077E457 /* SDKTest */,
 				B53DEDCC20BFF6D00077E457 /* SY185SDKRes */,
@@ -359,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53DEE1F20C156A70077E457 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
