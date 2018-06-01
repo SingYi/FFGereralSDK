@@ -19,9 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-
     Game185InitSDKWithBlock("123", "234", true, ^(bool success, const char *message) {
-        NSLog(@"%s",message);
+        NSLog(@"%s -> %s",message,__func__);
     });
 
 }

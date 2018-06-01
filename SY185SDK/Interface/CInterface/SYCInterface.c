@@ -18,9 +18,20 @@ void Game185InitCallBack(bool success, const char * message) {
 }
 
 void Game185InitSDKWithBlock(const char * AppID, const char * AppKey, bool useWindow, InitCallBackBlock callBackBlock) {
-    void *p = Game185InitCallBack;
     if (callBackBlock) {
         _callBackBlock = callBackBlock;
+    } else {
+        errorMessage("init call block not exist");
     }
-    GeneralInit(AppID, AppKey, useWindow, p);
+    GeneralInit(AppID, AppKey, useWindow, Game185InitCallBack);
 }
+
+
+
+
+
+
+
+
+
+
