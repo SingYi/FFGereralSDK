@@ -16,4 +16,7 @@ FOUNDATION_EXPORT const unsigned char SY185SDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SY185SDK/PublicHeader.h>
 
+#import <SY185sdk/SYOCInterface.h>
+#import <SY185sdk/SYCInterface.h>
+
 
