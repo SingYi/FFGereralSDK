@@ -17,9 +17,9 @@ void errorMessage(char * message) {
     printf("%s \n",[messageString UTF8String]);
 }
 
-void showMessage(void * message) {
+void showMessage(char * message) {
     if (![SDKModel sharedModel].showMessage) {
-        return;
+//        return;
     }
     NSString *messageString = [NSString stringWithFormat:@"SY_185_SDK|%@|: %s",gameDateString(),message];
     printf("%s \n",[messageString UTF8String]);

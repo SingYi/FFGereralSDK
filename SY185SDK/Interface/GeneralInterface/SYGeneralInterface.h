@@ -15,6 +15,12 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+#pragma mark - notice
+/**
+ * SDK debug 模式控制台开启打印信息(在初始化方法之前调用这个函数会开启在控制台打印相关信息,不调用此函数不会有打印信息.这个函数不会影响 SDK 接入,只是为了方便调试)
+ */
+void General185ShowDebugMessage(void);
+
 ///<<<<<<<<<<<<<<<<<<<<<<<<<<<< Function Pointer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 /**
  * SDK 初始化回调 Function Pointer
@@ -69,7 +75,7 @@ void GeneralShowLoginView(GeneralLoginCallBack callBackPointer);
 /**
  * SDK 退出登录接口(游戏中玩家点击退出游戏的时候请调用这个方法)
  */
-void General185SignOut(void);
+void GeneralSignOut(void);
 ///<<<<<<<<<<<<<<<<<<<<<<<<<<<< GM init >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 /**
  * GM 功能初始化

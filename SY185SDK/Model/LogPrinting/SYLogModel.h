@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 void errorMessage(char * message);
-void showMessage(void * message);
+void showMessage(char * message);
 
 
 #endif /* SYGeneralInterface */

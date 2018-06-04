@@ -15,21 +15,47 @@
 
 @implementation ViewController
 
+void initCallBack(bool success, const char * message) {
+    NSLog(@"init call back pointer -> %s",message);
+}
+
+void payCallBack(BOOL success, const char * rold_id) {
+    NSLog(@"pay call back pointer -> %s",rold_id);
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
-    Game185InitSDKWithBlock("123", "234", true, ^(bool success, const char *message) {
-        NSLog(@"%s -> %s",message,__func__);
+    /** 初始化 */
+    SY185SDKInitSDKWithPointer("123", "321", true, initCallBack);
+    SY185SDKInitSDKWithBlock("123", "321", true, ^(bool success, const char *message) {
+        NSLog(@"init call back block -> %s", message);
     });
 
+    /** 发起支付 */
+    SY185SDKPayStart("1", "1", "1", "1", "1", "1", "1", "1", payCallBack);
+
+
+
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
