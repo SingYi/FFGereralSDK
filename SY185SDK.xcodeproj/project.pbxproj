@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53600E620CA7A7A00DFE96A /* SYNetWorkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B53600E420CA7A7A00DFE96A /* SYNetWorkManager.h */; };
+		B53600E720CA7A7A00DFE96A /* SYNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53600E520CA7A7A00DFE96A /* SYNetWorkManager.m */; };
+		B53600EB20CA7B9C00DFE96A /* SYUserModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B53600E920CA7B9C00DFE96A /* SYUserModel.h */; };
+		B53600EC20CA7B9C00DFE96A /* SYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B53600EA20CA7B9C00DFE96A /* SYUserModel.m */; };
 		B53DEDA720BFF6970077E457 /* SY185SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B53DEDA520BFF6970077E457 /* SY185SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B53DEDB520BFF6B90077E457 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEDB420BFF6B90077E457 /* AppDelegate.m */; };
 		B53DEDB820BFF6B90077E457 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEDB720BFF6B90077E457 /* ViewController.m */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B53600E420CA7A7A00DFE96A /* SYNetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYNetWorkManager.h; sourceTree = "<group>"; };
+		B53600E520CA7A7A00DFE96A /* SYNetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYNetWorkManager.m; sourceTree = "<group>"; };
+		B53600E920CA7B9C00DFE96A /* SYUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYUserModel.h; sourceTree = "<group>"; };
+		B53600EA20CA7B9C00DFE96A /* SYUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYUserModel.m; sourceTree = "<group>"; };
 		B53DEDA220BFF6970077E457 /* SY185SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SY185SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53DEDA520BFF6970077E457 /* SY185SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SY185SDK.h; sourceTree = "<group>"; };
 		B53DEDA620BFF6970077E457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +98,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B53600E320CA7A3B00DFE96A /* NetWorkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B53600E420CA7A7A00DFE96A /* SYNetWorkManager.h */,
+				B53600E520CA7A7A00DFE96A /* SYNetWorkManager.m */,
+			);
+			path = NetWorkManager;
+			sourceTree = "<group>";
+		};
+		B53600E820CA7B9000DFE96A /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				B53600E920CA7B9C00DFE96A /* SYUserModel.h */,
+				B53600EA20CA7B9C00DFE96A /* SYUserModel.m */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
 		B53DED9820BFF6970077E457 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +224,8 @@
 			children = (
 				B53DEE1720C14CD00077E457 /* SY185GeneralModel.h */,
 				B53DEE1820C14CD00077E457 /* SY185GeneralModel.m */,
+				B53600E820CA7B9000DFE96A /* UserModel */,
+				B53600E320CA7A3B00DFE96A /* NetWorkManager */,
 				B53DEE0620C14BCE0077E457 /* SDKModel */,
 				B53DEE0320C14BCE0077E457 /* LogPrinting */,
 			);
@@ -238,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53DEE1920C14CD00077E457 /* SY185GeneralModel.h in Headers */,
+				B53600E620CA7A7A00DFE96A /* SYNetWorkManager.h in Headers */,
 				B53DEDF520C12A3F0077E457 /* SYCInterface.h in Headers */,
 				B53DEE1D20C14D600077E457 /* SY185PCH.pch in Headers */,
 				B53DEDE620BFFAF20077E457 /* SYGeneralInterface.h in Headers */,
@@ -245,6 +274,7 @@
 				B53DEE0B20C14BCE0077E457 /* SDKModel.h in Headers */,
 				B53DEDF120C129D80077E457 /* SYOCInterface.h in Headers */,
 				B53DEDA720BFF6970077E457 /* SY185SDK.h in Headers */,
+				B53600EB20CA7B9C00DFE96A /* SYUserModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +339,7 @@
 		B53DED9920BFF6970077E457 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Sans;
 				TargetAttributes = {
 					B53DEDA120BFF6970077E457 = {
@@ -383,7 +413,9 @@
 				B53DEDF220C129D80077E457 /* SYOCInterface.m in Sources */,
 				B53DEE0A20C14BCE0077E457 /* SYLogModel.m in Sources */,
 				B53DEDF620C12A3F0077E457 /* SYCInterface.c in Sources */,
+				B53600EC20CA7B9C00DFE96A /* SYUserModel.m in Sources */,
 				B53DEE0C20C14BCE0077E457 /* SDKModel.m in Sources */,
+				B53600E720CA7A7A00DFE96A /* SYNetWorkManager.m in Sources */,
 				B53DEE1A20C14CD00077E457 /* SY185GeneralModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +473,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -448,6 +481,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -499,6 +533,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -506,6 +541,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

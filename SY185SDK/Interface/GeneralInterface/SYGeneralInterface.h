@@ -42,6 +42,20 @@ typedef void(*GeneralPayCallBack)(bool success, const char *order_id);
  * @param token             账号 token
  */
 typedef void(*GeneralLoginCallBack)(bool success, const char * message, const char * username, const char * token);
+/**
+ * SDK 登出回调 Function Pointer
+ * @param message           如果成功返回 NUll 失败则返回失败的信息
+ */
+typedef void(*GeneralLogoutCallBack)(const char * message);
+/**
+ * SDK GM发送道具回调 Function Pointer
+ * @param success           是否成功
+ * @param message           如果成功返回 NUll 失败则返回失败的信息
+ * @param username          用户账号
+ * @param token             账号 token
+ */
+typedef void(*GeneralLoginCallBack)(bool success, const char * message, const char * username, const char * token);
+
 
 ///<<<<<<<<<<<<<<<<<<<<<<<<<<<< Function >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 /**
