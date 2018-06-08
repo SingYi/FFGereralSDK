@@ -14,7 +14,6 @@
 		B53DEDBD20BFF6B90077E457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53DEDBC20BFF6B90077E457 /* Assets.xcassets */; };
 		B53DEDC020BFF6B90077E457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53DEDBE20BFF6B90077E457 /* LaunchScreen.storyboard */; };
 		B53DEDC320BFF6B90077E457 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEDC220BFF6B90077E457 /* main.m */; };
-		B53DEDD220BFF6FE0077E457 /* SY185SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53DEDA220BFF6970077E457 /* SY185SDK.framework */; };
 		B53DEDE620BFFAF20077E457 /* SYGeneralInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = B53DEDE420BFFAF20077E457 /* SYGeneralInterface.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B53DEDE720BFFAF20077E457 /* SYGeneralInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEDE520BFFAF20077E457 /* SYGeneralInterface.m */; };
 		B53DEDF120C129D80077E457 /* SYOCInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = B53DEDEF20C129D80077E457 /* SYOCInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,17 +28,8 @@
 		B53DEE1A20C14CD00077E457 /* SY185GeneralModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEE1820C14CD00077E457 /* SY185GeneralModel.m */; };
 		B53DEE1D20C14D600077E457 /* SY185PCH.pch in Headers */ = {isa = PBXBuildFile; fileRef = B53DEE1C20C14D570077E457 /* SY185PCH.pch */; };
 		B53DEE1F20C156A70077E457 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B53DEE1E20C156A70077E457 /* README.md */; };
+		B55EC93F20C7CEDA002BA81D /* SY185SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53DEDA220BFF6970077E457 /* SY185SDK.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B53DEDD320BFF7050077E457 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B53DED9920BFF6970077E457 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B53DEDA120BFF6970077E457;
-			remoteInfo = SY185SDK;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B53DEDA220BFF6970077E457 /* SY185SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SY185SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53DEDD220BFF6FE0077E457 /* SY185SDK.framework in Frameworks */,
+				B55EC93F20C7CEDA002BA81D /* SY185SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +280,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				B53DEDD420BFF7050077E457 /* PBXTargetDependency */,
 			);
 			name = SDKTest;
 			productName = SDKTest;
@@ -417,14 +406,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B53DEDD420BFF7050077E457 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B53DEDA120BFF6970077E457 /* SY185SDK */;
-			targetProxy = B53DEDD320BFF7050077E457 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B53DEDB920BFF6B90077E457 /* Main.storyboard */ = {
@@ -562,6 +543,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JR27SLBFXN;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -584,6 +566,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JR27SLBFXN;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
